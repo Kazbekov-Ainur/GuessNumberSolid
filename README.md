@@ -66,6 +66,7 @@ public GameService(ISettingsRepository settingsRepository, IGameRepository gameR
 {
     // Не зависит от конкретной реализации
 }
+
 4. 🧩 Принцип разделения интерфейса (Interface Segregation Principle)
 Что реализовано:
 
