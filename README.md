@@ -23,6 +23,7 @@ public class GameService : IGameService
     public GameSession StartNewGame() { /* генерация чисел и начало игры */ }
     public GuessResult MakeGuess(Guid gameId, int number) { /* проверка попыток */ }
 }
+
 2. 🔄 Принцип открытости/закрытости (Open/Closed Principle)
 Что реализовано:
 
@@ -44,6 +45,7 @@ public interface ISettingsRepository
 // Новые реализации добавляются без изменения существующего кода
 public class DatabaseSettingsRepository : ISettingsRepository { /* ... */ }
 public class EnvironmentSettingsRepository : ISettingsRepository { /* ... */ }
+
 3. 🔁 Принцип подстановки Барбары Лисков (Liskov Substitution Principle)
 Что реализовано:
 
@@ -95,6 +97,7 @@ public interface IGameService
     GameSession StartNewGame();
     GuessResult MakeGuess(Guid gameId, int number);
 }
+
 5. 📡 Принцип инверсии зависимостей (Dependency Inversion Principle)
 Что реализовано:
 
